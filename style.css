@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-border: #e0e0e0;
+  --color-link: #0066cc;
+  --color-link-hover: #004499;
+  --color-card-bg: #f8f8f8;
+  --color-btn-bg: #e8e8e8;
+  --color-btn-active: #0066cc;
+  --color-btn-active-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1a1a;
+    --color-text: #e0e0e0;
+    --color-text-secondary: #aaaaaa;
+    --color-border: #333333;
+    --color-link: #4da6ff;
+    --color-link-hover: #80c0ff;
+    --color-card-bg: #242424;
+    --color-btn-bg: #333333;
+    --color-btn-active: #4da6ff;
+    --color-btn-active-text: #1a1a1a;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding: 2rem 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.last-updated {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.card-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-list li {
+  margin-bottom: 0.75rem;
+}
+
+.card-list a {
+  display: block;
+  padding: 1rem 1.25rem;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  transition: border-color 0.15s;
+}
+
+.card-list a:hover {
+  border-color: var(--color-link);
+  text-decoration: none;
+}
+
+.card-list .card-title {
+  font-weight: 600;
+  display: block;
+}
+
+.card-list .card-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.lang-switch button {
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background-color: var(--color-btn-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.lang-switch button.active {
+  background-color: var(--color-btn-active);
+  color: var(--color-btn-active-text);
+  border-color: var(--color-btn-active);
+}
+
+.lang-content {
+  display: none;
+}
+
+.lang-content.active {
+  display: block;
+}
+
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--color-text-secondary);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-link);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--color-border);
+}
+
+th {
+  background-color: var(--color-card-bg);
+  font-weight: 600;
+  white-space: nowrap;
+  width: 30%;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
