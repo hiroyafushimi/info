@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー — Cohérence</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0A1628;color:#E8EAF0;font-family:'Noto Sans JP',sans-serif;font-weight:400;font-size:15px;line-height:1.9;padding:0 24px 80px}
+.container{max-width:640px;margin:0 auto;padding-top:60px}
+h1{font-size:22px;font-weight:500;margin-bottom:8px;letter-spacing:1px}
+.brand{color:#E8A838;font-size:13px;letter-spacing:2px;margin-bottom:48px}
+.date{color:#6B7FA0;font-size:12px;margin-bottom:48px}
+.divider{width:40px;height:1px;background:#E8A838;opacity:0.3;margin:0 0 48px}
+h2{font-size:16px;font-weight:500;color:#E8EAF0;margin:40px 0 16px;letter-spacing:0.5px}
+p{color:#94A3B8;margin-bottom:16px}
+ul{color:#94A3B8;padding-left:20px;margin-bottom:16px}
+li{margin-bottom:8px}
+a{color:#E8A838;text-decoration:none}
+a:hover{text-decoration:underline}
+.footer{margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.04);color:#6B7FA0;font-size:12px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>プライバシーポリシー</h1>
+<div class="brand">COHÉRENCE — ZEN × NEUROSCIENCE</div>
+<div class="divider"></div>
+<p class="date">最終更新日: 2026年3月19日</p>
+
+<p>Cohérence（以下「本アプリ」）は、ユーザーのプライバシーを最優先に設計されています。本ポリシーでは、本アプリが収集するデータ、その目的、および保護方法について説明します。</p>
+
+<h2>個人情報取扱事業者</h2>
+
+<p>事業者名: 伏見洋哉（個人事業主）<br>
+所在地: 東京都調布市<br>
+連絡先: <a href="mailto:baysick.ff@gmail.com">baysick.ff@gmail.com</a></p>
+
+<h2>1. 収集する情報</h2>
+
+<p>本アプリが収集する情報は最小限に限定されています。</p>
+
+<p><strong>アカウント情報</strong></p>
+<ul>
+<li>Firebase UID（認証用の一意な識別子）</li>
+<li>表示名（任意。Apple IDまたはGoogleアカウントから取得）</li>
+</ul>
+
+<p><strong>収集しない情報</strong></p>
+<ul>
+<li>メールアドレス</li>
+<li>電話番号</li>
+<li>位置情報</li>
+<li>連絡先</li>
+<li>写真・メディア</li>
+<li>広告用識別子（IDFA）</li>
+</ul>
+
+<h2>2. デイリーログ（ジャーナル）データ</h2>
+
+<p>デイリーログに記入された内容は、お使いの端末にのみ保存されます。当方のサーバーには一切送信されません。</p>
+
+<ul>
+<li><strong>保存先:</strong> 端末内のローカルデータベース（SQLite）</li>
+<li><strong>バックアップ:</strong> Apple iCloud（ユーザーが端末のiCloud設定で有効にしている場合のみ。Appleの暗号化により保護されます）</li>
+<li><strong>サーバー送信:</strong> なし。ジャーナルデータは当方のサーバーに送信されることはありません</li>
+</ul>
+
+<h2>3. セッションデータ</h2>
+
+<p>瞑想セッションの履歴（完了日時、所要時間、ステップ、気分記録）は、以下の目的で保存されます。</p>
+
+<ul>
+<li><strong>端末内:</strong> ストリーク表示、進捗ダッシュボード、気分トレンドの計算</li>
+<li><strong>クラウド同期:</strong> Firebase Firestore に暗号化して保存（複数デバイス間でのストリーク継続のため）。匿名ユーザーの場合、クラウド同期は行われません</li>
+</ul>
+
+<h2>4. アナリティクス</h2>
+
+<p>本アプリは、利用状況の分析にPostHog Cloud EU を使用しています。</p>
+
+<ul>
+<li><strong>データセンター:</strong> EU（欧州連合）域内</li>
+<li><strong>Cookieの使用:</strong> なし（Cookieレスモード）</li>
+<li><strong>収集内容:</strong> セッション開始/完了、画面遷移、機能の利用状況などのイベントデータ。内部識別子（Firebase UID）を用いてイベントを紐づけますが、直接個人を特定する氏名・メールアドレス等は送信していません</li>
+</ul>
+
+<p>Firebase AnalyticsおよびGoogle Analyticsは使用していません。</p>
+
+<h2>5. サブスクリプション</h2>
+
+<p>サブスクリプションの管理にはRevenueCatを使用しています。購入情報はAppleのApp Store経由で処理され、クレジットカード情報等の決済情報を本アプリが直接取り扱うことはありません。</p>
+
+<h2>6. 第三者へのデータ提供</h2>
+
+<p>本アプリは、ユーザーの個人データを第三者に販売、賃貸、または共有しません。データは以下のサービスプロバイダーとのみ共有されます。</p>
+
+<ul>
+<li><strong>Firebase Authentication:</strong> ユーザー認証（Google LLC、米国）</li>
+<li><strong>Firebase Firestore:</strong> セッション履歴の同期（Google LLC、米国）</li>
+<li><strong>PostHog Cloud EU:</strong> 利用状況の分析（PostHog Inc.、EUデータセンター）</li>
+<li><strong>RevenueCat:</strong> サブスクリプション管理（RevenueCat Inc.、米国）</li>
+<li><strong>Apple iCloud:</strong> ジャーナルバックアップ（Apple Inc. — ユーザーの設定に依存）</li>
+</ul>
+
+<h2>7. データの保持と削除</h2>
+
+<p>ユーザーはいつでも自身のデータを削除できます。</p>
+
+<ul>
+<li><strong>アカウント削除:</strong> アプリ内の「設定」→「アカウントを削除」から実行できます。Firebase認証データ、Firestoreに保存されたセッション履歴、RevenueCatの顧客データが削除されます</li>
+<li><strong>ジャーナルデータ:</strong> 端末からアプリを削除することで、ローカルに保存されたジャーナルデータは消去されます。iCloudバックアップは、端末のiCloud設定から手動で削除してください</li>
+<li><strong>アナリティクスデータ:</strong> PostHogに送信されたデータは内部識別子と紐づいていますが、アカウント削除後は個人との対応関係が失われます</li>
+</ul>
+
+<h2>8. 子どものプライバシー</h2>
+
+<p>本アプリは13歳未満のお子様を対象としておらず、13歳未満のお子様から意図的にデータを収集することはありません。</p>
+
+<h2>9. セキュリティ</h2>
+
+<p>データの保護のために以下の措置を講じています。</p>
+
+<ul>
+<li>Firebase とのすべての通信はTLS暗号化で保護されています</li>
+<li>ジャーナルデータは端末内のみに保存され、サーバーには送信されません</li>
+<li>iCloudバックアップはAppleの暗号化により保護されています</li>
+<li>広告トラッキングやIDFAの収集は行っていません</li>
+</ul>
+
+<h2>10. 日本の個人情報保護法への対応</h2>
+
+<p>本アプリは、日本の個人情報保護法に基づき、以下の対応を行っています。</p>
+
+<ul>
+<li>利用目的を本ポリシーに明示しています</li>
+<li>個人情報の取り扱いは必要最小限にとどめています</li>
+<li>ユーザーからの開示・訂正・削除の請求に対応します</li>
+<li>個人データの第三者提供先を明示しています</li>
+<li>外国にある第三者への提供について、提供先の所在国を明示しています</li>
+</ul>
+
+<h2>11. EU一般データ保護規則（GDPR）への対応</h2>
+
+<p>欧州連合にお住まいのユーザーには、以下の権利があります。</p>
+
+<ul>
+<li>ご自身のデータへのアクセス権</li>
+<li>データの訂正権</li>
+<li>データの削除権（「忘れられる権利」）</li>
+<li>データのポータビリティ権</li>
+<li>処理に対する異議申立て権</li>
+</ul>
+
+<p>これらの権利を行使される場合は、下記のお問い合わせ先までご連絡ください。</p>
+
+<p><strong>処理の法的根拠:</strong> データの処理は、ユーザーの同意（GDPR第6条(1)(a)）およびサービス契約の履行（GDPR第6条(1)(b)）に基づいています。</p>
+
+<p><strong>データ管理者:</strong> 伏見洋哉（Cohérence運営者、日本国所在）</p>
+
+<h2>12. ポリシーの変更</h2>
+
+<p>本ポリシーは、必要に応じて更新されることがあります。重要な変更がある場合は、アプリ内で通知します。</p>
+
+<h2>13. お問い合わせ</h2>
+
+<p>本ポリシーに関するご質問は、以下までご連絡ください。</p>
+
+<p>メール: <a href="mailto:baysick.ff@gmail.com">baysick.ff@gmail.com</a></p>
+
+<div class="footer">
+<p>© 2026 Cohérence — 伏見洋哉. All rights reserved.</p>
+</div>
+
+</div>
+</body>
+</html>
